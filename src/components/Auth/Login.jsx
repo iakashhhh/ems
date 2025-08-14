@@ -43,13 +43,13 @@ const Login = ({handleLogin}) => {
             </form>
         </div> */}
         <div className='border-2 rounded-xl border-emerald-600 p-6 sm:p-10 lg:p-20 flex flex-col items-center w-[90%] max-w-md transform transition-shadow duration-300 hover:shadow-lg'>
-  <h1
+  <h2
     className='text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-600 mb-6 text-center 
                transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:text-emerald-700 cursor-pointer'
     aria-label='Project title'
   >
     Employee Management System
-  </h1>
+  </h2>
 
   <form 
     onSubmit={(e) => { submitHandler(e) }}

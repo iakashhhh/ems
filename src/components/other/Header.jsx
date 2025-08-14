@@ -10,7 +10,7 @@ const Header = (props) => {
   }
 
   // If userData exists, use their firstName, otherwise default to 'User'
-  const displayName = userData?.firstName || 'User';
+  const displayName = userData?.name || userData?.data?.firstName || 'User';
 
   return (
     <div className='flex items-end justify-between'>

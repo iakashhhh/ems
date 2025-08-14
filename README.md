@@ -1,4 +1,8 @@
 # React + Vite
+Live demo: https://ems-akash.netlify.app
+
+<br>
+Login using- "admin@me.com, 123" or "employee1@example.com, 123"
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -46,7 +46,7 @@ const Login = ({handleLogin}) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required 
-          className='outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400 w-full'
+          className='outline-none bg-transparent text-gray-900 caret-emerald-600 border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full mt-3 placeholder:text-gray-400 w-full'
           type="password"
           placeholder='Enter password'
         />

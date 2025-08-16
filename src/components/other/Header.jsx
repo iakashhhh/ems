@@ -1,5 +1,4 @@
 import React from 'react'
-import { LogOut } from 'lucide-react'  // modern icon
 
 const Header = ({ changeUser }) => {
   // Get logged-in user from localStorage
@@ -32,7 +31,8 @@ const Header = ({ changeUser }) => {
           onClick={logOutUser}
           className="flex items-center gap-2 bg-red-600 hover:bg-red-700 transition-all duration-300 text-white font-medium px-4 py-2 rounded-lg shadow-md"
         >
-          <LogOut size={18} />
+          {/* Replace LogOut icon with emoji fallback */}
+          <span role="img" aria-label="logout">🔒</span>
           <span className="hidden sm:inline">Log Out</span>
         </button>
       </div>

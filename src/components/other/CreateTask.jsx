@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../context/AuthProvider'
-import { PlusCircle } from 'lucide-react'
 
 const CreateTask = () => {
   const [userData, setUserData] = useContext(AuthContext)
@@ -47,7 +46,7 @@ const CreateTask = () => {
   return (
     <div className="p-6 bg-[#111]/70 backdrop-blur-md rounded-2xl shadow-lg border border-gray-800 mt-6">
       <h2 className="text-xl font-semibold text-emerald-400 mb-6 flex items-center gap-2">
-        <PlusCircle size={20} /> Create New Task
+        ➕ Create New Task
       </h2>
 
       <form
@@ -114,7 +113,7 @@ const CreateTask = () => {
             type="submit"
             className="mt-4 flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-5 rounded-lg shadow-md transition-all duration-300"
           >
-            <PlusCircle size={18} /> Create Task
+            ➕ Create Task
           </button>
         </div>
       </form>

@@ -2,17 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  color: #fff;
-}
-body{
-  background-color: #111;
-}
-#tasklist::-webkit-scrollbar{
+/* Base styles */
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-[#111] text-gray-100; /* Dark background with softer white text */
+  }
+
+  /* Scrollbars */
+  #tasklist::-webkit-scrollbar {
     background-color: transparent;
     height: 5px;
+  }
+  #tasklist::-webkit-scrollbar-thumb {
+    background-color: rgb(143, 143, 143);
+    border-radius: 50px;
+  }
 }
-#tasklist::-webkit-scrollbar-thumb{
-  background-color: rgb(143, 143, 143);
-  border-radius: 50px;
+
+/* Components (custom reusable classes) */
+@layer components {
+  .card {
+    @apply rounded-2xl bg-[#1a1a1a] shadow-md border border-white/10 p-4;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 
+           text-white font-medium transition;
+  }
+
+  .input {
+    @apply w-full rounded-xl bg-[#222] border border-white/10 px-3 py-2 
+           text-sm text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
 }
